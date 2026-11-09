@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  res.send(tips.push(req.body.tips));
+  tips.push(req.body.tips);
   res.send(tips);
 });
 
